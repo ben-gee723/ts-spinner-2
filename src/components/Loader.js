@@ -1,7 +1,6 @@
-import { Img } from 'react-image';
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
-const spin = keyframes`
+const Spin = keyframes`
     0% {
         transform: rotate(0deg);
     }
@@ -12,12 +11,10 @@ const spin = keyframes`
 const Loader = styled.div`
     border: 0.2em solid rgba(0, 0, 0, 0.1);
     border-top: 0.2em solid #767676;
-    border-radius: 50%;
-    width: 2.28571429rem;
-    height: 2.28571429rem;
-    animation: ${spin} 0.6s linear infinite;    
+    // border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    animation: ${Spin} 0.6s linear infinite;    
 `
 
-const MyLoader = () => <Img src="../../logo.svg" />;
-
-export default MyLoader;
+export default Loader;
