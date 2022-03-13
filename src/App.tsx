@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import Loader from './components/Loader.js';
+import ImgLoader from './components/ImgLoader';
+import Loader from './components/Loader';
 
+// Not working
+// import LoaderReactImage from './components/LoaderReactImage';
 
-// Import out image loader
-// import ImgLoader from './components/ImgLoader';
-import LoaderNiceTS from './components/LoaderNiceTS';
+// Import outr loader
+import LoaderNice from './components/LoaderNice';
 
 // Import the image
-// import loadingCircles from './loadingCircles.svg';
+import loadingCircles from './loadingCircles.svg';
 
 function App() {
 
@@ -35,11 +37,10 @@ function App() {
 
       {isLoading ?
         <header className="App-header">
-          <LoaderNiceTS />
-          {/* <LoaderNice /> */}
-          {/* <ImgLoader src={loadingCircles} /> */}
-          {/* <ImgLoader src={logo} /> */}
-          {/* <Loader /> */}
+          <LoaderNice />
+          <ImgLoader src={loadingCircles} />
+          <ImgLoader src={logo} />
+          <Loader />
           {/* <img src={logo} className="App-logo-loader" alt="logo" /> */}
         </header> :
         <header className="App-header">

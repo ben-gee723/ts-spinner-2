@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const Spin = keyframes`
     0% {
@@ -11,7 +11,7 @@ const Spin = keyframes`
 const Loader = styled.div`
     border: 0.2em solid rgba(0, 0, 0, 0.1);
     border-top: 0.2em solid #767676;
-    // border-radius: 50%;
+    border-radius: 50%;
     width: 7rem;
     height: 7rem;
     animation: ${Spin} 0.6s linear infinite;    
