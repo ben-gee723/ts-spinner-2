@@ -5,7 +5,7 @@ import ImgLoader from './components/ImgLoader';
 import Loader from './components/Loader';
 
 // Not working
-// import LoaderReactImage from './components/LoaderReactImage';
+import LoaderReactImage from './components/LoaderReactImage';
 
 // Import outr loader
 import LoaderNice from './components/LoaderNice';
